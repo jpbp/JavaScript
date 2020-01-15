@@ -1,0 +1,66 @@
+
+<h1>Projeto</h1>
+
+<ul>
+    <li> <span wm-folder>backend</span> 
+    <ul>
+        <li> <span wm-folder>app</span> 
+            <ul>
+                <li jp>usuario.js</li>
+                <li jp>produto.js</li>
+                <li jp>venda.js</li>
+            </ul>
+        </li>
+    </li>
+        <li> <span wm-folder>config</span>
+            <ul>
+                <li jp>branco.js</li>
+                <li jp>preto.js</li>
+            </ul>
+        </li>
+</ul>
+
+    <li> <span wm-folder>frontend</span> 
+        <ul>
+            <li> <span wm-folder>public</span> 
+                <ul>
+                    <li jp>app.css</li>
+                    <li jp>app.js</li>
+                </ul>
+            </li>
+        </li>
+        </ul>
+    </li>
+</ul>
+<button>
+    reset
+</button>
+<script>
+    document.querySelectorAll('[wm-folder]').forEach(folder => {
+        folder.onclick= function (e){
+            const ul = folder.nextElementSibling
+            const d = ul.style.display
+            ul.style.display = d ==='none' ? 'block' : 'none'
+        }
+    })
+
+    document.querySelectorAll('[jp]').forEach(cores => {
+        cores.onclick = function(e){
+            let random = Math.floor(Math.random()*(4-1)+1)
+            if(random===1){
+                cores.style.background='#FFFFFF'
+            }
+            else if(random===2){
+                cores.style.background='#00008B'
+            }
+            else if(random===3){
+                cores.style.background='#CD2626'
+            }
+        }
+    })
+    const button = document.querySelector('button').onclick = function(e){
+        document.querySelectorAll('[jp]').forEach(cores=> cores.style.background='#FFFFFF')
+    }
+
+    
+</script>
