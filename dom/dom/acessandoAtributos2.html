@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Acessando Atributos #02</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class='conteudo exercicio'>
+    <div>
+        <label for="compras">Compras</label>
+        <ul id="compras" destino='escritório' data-urgencia="5">
+            <li>Café</li>
+            <li>Água</li>
+            <li>Copo Descartável</li>
+        </ul>
+    </div>
+    <script>
+       const lista = document.querySelector('div ul[destino="escritório"]') 
+       console.log(lista.childNodes)
+       console.log(lista.destino) // tentando acessar o atributo destino é indefinido pois o browser não sabe 
+       console.log(lista.getAttribute('destino')) // retonar o valor do destino que é escritorio 
+       console.log(lista.hasAttribute('destino')) // verifica se um determinado atributo esta presente na tag
+       lista.setAttribute('destino', 'empresa') // altera o valor do atributo destino
+       lista.setAttribute('status', 'aberto') // adicciona um novo elemento
+       lista.removeAttribute('destino') // remove o atributo destino
+
+       console.log(lista.getAttribute('destino'))
+    </script>
+</body>
+
+</html>

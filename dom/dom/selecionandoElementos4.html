@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Selecionar Elementos #04</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body class="conteudo exercicio">
+    <div>
+        <p>Início</p>
+    </div>
+    <div>
+        <ul>
+            <li>Pedro</li>
+            <li>Ana</li>
+            <li>Bia</li>
+        </ul>
+    </div>
+    <div>
+        <p>Fim</p>
+    </div>
+    <script>
+        function log (){
+            console.log(this)
+        }
+        HTMLCollection.prototype.log=log // adicionando a função log no html Collection, e para os demais tbm
+        HTMLElement.prototype.log=log
+        NodeList.prototype.log=log // por nodeList ser um  node, node tbm tem q ter essa function
+        Node.prototype.log=log
+
+        const lista = document.querySelector('div ul') //pegando o ul 
+        lista.log() // imprimindo o ul
+        lista.parentElement.log() // pegando o pai de ul, que é o div
+        lista.childNodes.log() // pegando os filhos da ul, que são o text e o li
+        const primeiro = lista.firstChild //primeito filho do ul
+        primeiro.log() // text
+        primeiro.nextSibling.log() // proximo irmão do text, que é o li pedro
+        const ultimo = lista.lastChild
+        ultimo.log()
+        ultimo.previousSibling.log() // pegando o elemento anterior do ultimo filho
+
+        lista.children.log()
+        lista.firstElementChild.log()// vai retornar os li do ul, sem o text
+        document.querySelectorAll('div ul li').log()
+        
+
+    </script>
+</body>
+
+</html>

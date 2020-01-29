@@ -1,0 +1,57 @@
+<h2>Tabelas</h2>
+<table border="1">
+    <caption>Produtos</caption>
+    
+    <thead>
+        <tr>
+            <th>Produto</th>
+            <th>Preco</th>
+            <th>Quantidade</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Ipad</td>
+            <td preco>3548,00</td>
+            <td>1</td>
+            <td>3548,00</td>
+        </tr>
+        <tr>
+            <td>Samsung 9</td>
+            <td preco>1500,00</td>
+            <td>1</td>
+            <td>1500,00</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">Total:</td> 
+            <td id="total"></td>
+        </tr>
+
+    </tfoot>
+</table>
+<button>calcular</button>
+<script>
+
+        document.querySelector('button').onclick = function(e){
+            let total=0
+            document.querySelectorAll(['[preco]']).forEach(itens => total+=parseInt(itens.innerHTML))
+            
+            document.getElementById("total").innerHTML=total.toString()
+        }
+        /*
+        let total = 0 
+        document.querySelectorAll('[preco]').forEach(item => {
+            item.onclick=function (e){
+                console.log(item.innerHTML)
+                total += parseInt(item.innerHTML)
+                console.log(total)
+                document.getElementById("total").innerHTML=total.toString()
+            }
+        })
+        */
+
+
+</script>

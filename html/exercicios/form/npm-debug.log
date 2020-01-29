@@ -1,0 +1,143 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'express@4.16.3',
+1 verbose cli   'body-parser@1.82.2' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData express@4.16.3
+8 silly fetchPackageMetaData body-parser@1.82.2
+9 silly fetchNamedPackageData express
+10 silly mapToRegistry name express
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry uri https://registry.npmjs.org/express
+14 silly fetchNamedPackageData body-parser
+15 silly mapToRegistry name body-parser
+16 silly mapToRegistry using default registry
+17 silly mapToRegistry registry https://registry.npmjs.org/
+18 silly mapToRegistry uri https://registry.npmjs.org/body-parser
+19 verbose request uri https://registry.npmjs.org/body-parser
+20 verbose request no auth needed
+21 info attempt registry request try #1 at 7:56:55 PM
+22 verbose request id e683b751c0f83887
+23 verbose etag W/"69165633b8917311c8a5b29b5aa3a438"
+24 verbose lastModified Fri, 29 Nov 2019 09:32:45 GMT
+25 http request GET https://registry.npmjs.org/body-parser
+26 verbose request uri https://registry.npmjs.org/express
+27 verbose request no auth needed
+28 info attempt registry request try #1 at 7:56:55 PM
+29 verbose etag W/"72f8ffb551c782b44a301010ef5f4f7e"
+30 verbose lastModified Tue, 14 Jan 2020 20:17:40 GMT
+31 http request GET https://registry.npmjs.org/express
+32 http 304 https://registry.npmjs.org/body-parser
+33 verbose headers { date: 'Sun, 19 Jan 2020 22:56:52 GMT',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'set-cookie':
+33 verbose headers    [ '__cfduid=dcc869e8293ab1b89bb38b002f23d65601579474612; expires=Tue, 18-Feb-20 22:56:52 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+33 verbose headers   'cf-ray': '557c6788ee51eec2-GRU',
+33 verbose headers   age: '2869',
+33 verbose headers   'cache-control': 'public, max-age=300',
+33 verbose headers   etag: '"69165633b8917311c8a5b29b5aa3a438"',
+33 verbose headers   'last-modified': 'Fri, 29 Nov 2019 09:32:45 GMT',
+33 verbose headers   vary: 'Accept-Encoding',
+33 verbose headers   'cf-cache-status': 'HIT',
+33 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+33 verbose headers   server: 'cloudflare' }
+34 silly get cb [ 304,
+34 silly get   { date: 'Sun, 19 Jan 2020 22:56:52 GMT',
+34 silly get     connection: 'keep-alive',
+34 silly get     'set-cookie':
+34 silly get      [ '__cfduid=dcc869e8293ab1b89bb38b002f23d65601579474612; expires=Tue, 18-Feb-20 22:56:52 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+34 silly get     'cf-ray': '557c6788ee51eec2-GRU',
+34 silly get     age: '2869',
+34 silly get     'cache-control': 'public, max-age=300',
+34 silly get     etag: '"69165633b8917311c8a5b29b5aa3a438"',
+34 silly get     'last-modified': 'Fri, 29 Nov 2019 09:32:45 GMT',
+34 silly get     vary: 'Accept-Encoding',
+34 silly get     'cf-cache-status': 'HIT',
+34 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+34 silly get     server: 'cloudflare' } ]
+35 verbose etag https://registry.npmjs.org/body-parser from cache
+36 verbose get saving body-parser to /home/jp/.npm/registry.npmjs.org/body-parser/.cache.json
+37 http 304 https://registry.npmjs.org/express
+38 verbose headers { date: 'Sun, 19 Jan 2020 22:56:52 GMT',
+38 verbose headers   connection: 'keep-alive',
+38 verbose headers   'set-cookie':
+38 verbose headers    [ '__cfduid=db52be3242f1273331bff38ead2c4573d1579474612; expires=Tue, 18-Feb-20 22:56:52 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+38 verbose headers   'cf-ray': '557c67890e11d008-GRU',
+38 verbose headers   age: '372',
+38 verbose headers   'cache-control': 'public, max-age=300',
+38 verbose headers   etag: '"72f8ffb551c782b44a301010ef5f4f7e"',
+38 verbose headers   'last-modified': 'Tue, 14 Jan 2020 20:17:40 GMT',
+38 verbose headers   vary: 'Accept-Encoding',
+38 verbose headers   'cf-cache-status': 'HIT',
+38 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+38 verbose headers   server: 'cloudflare' }
+39 silly get cb [ 304,
+39 silly get   { date: 'Sun, 19 Jan 2020 22:56:52 GMT',
+39 silly get     connection: 'keep-alive',
+39 silly get     'set-cookie':
+39 silly get      [ '__cfduid=db52be3242f1273331bff38ead2c4573d1579474612; expires=Tue, 18-Feb-20 22:56:52 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+39 silly get     'cf-ray': '557c67890e11d008-GRU',
+39 silly get     age: '372',
+39 silly get     'cache-control': 'public, max-age=300',
+39 silly get     etag: '"72f8ffb551c782b44a301010ef5f4f7e"',
+39 silly get     'last-modified': 'Tue, 14 Jan 2020 20:17:40 GMT',
+39 silly get     vary: 'Accept-Encoding',
+39 silly get     'cf-cache-status': 'HIT',
+39 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+39 silly get     server: 'cloudflare' } ]
+40 verbose etag https://registry.npmjs.org/express from cache
+41 verbose get saving express to /home/jp/.npm/registry.npmjs.org/express/.cache.json
+42 silly fetchPackageMetaData Error: No compatible version found: body-parser@1.82.2
+42 silly fetchPackageMetaData Valid install targets:
+42 silly fetchPackageMetaData 1.19.0, 1.18.3, 1.18.2, 1.18.1, 1.18.0, 1.17.2, 1.17.1, 1.17.0, 1.16.1, 1.16.0, 1.15.2, 1.15.1, 1.15.0, 1.14.2, 1.14.1, 1.14.0, 1.13.3, 1.13.2, 1.13.1, 1.13.0, 1.12.4, 1.12.3, 1.12.2, 1.12.1, 1.12.0, 1.11.0, 1.10.2, 1.10.1, 1.10.0, 1.9.3, 1.9.2, 1.9.1, 1.9.0, 1.8.4, 1.8.3, 1.8.2, 1.8.1, 1.8.0, 1.7.0, 1.6.7, 1.6.6, 1.6.5, 1.6.4, 1.6.3, 1.6.2, 1.6.1, 1.6.0, 1.5.2, 1.5.1, 1.5.0, 1.4.3, 1.4.2, 1.4.1, 1.4.0, 1.3.1, 1.3.0, 1.2.2, 1.2.1, 1.2.0, 1.1.2, 1.1.1, 1.1.0, 1.0.2, 1.0.1, 1.0.0
+42 silly fetchPackageMetaData
+42 silly fetchPackageMetaData     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:156:16)
+42 silly fetchPackageMetaData     at /usr/share/npm/node_modules/iferr/index.js:13:50
+42 silly fetchPackageMetaData     at /usr/share/npm/lib/utils/pulse-till-done.js:19:8
+42 silly fetchPackageMetaData     at saved (/usr/share/npm/lib/cache/caching-client.js:168:7)
+42 silly fetchPackageMetaData     at /usr/share/npm/node_modules/graceful-fs/polyfills.js:210:7
+42 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:135:15)
+42 silly fetchPackageMetaData  error for body-parser@1.82.2 Error: No compatible version found: body-parser@1.82.2
+42 silly fetchPackageMetaData Valid install targets:
+42 silly fetchPackageMetaData 1.19.0, 1.18.3, 1.18.2, 1.18.1, 1.18.0, 1.17.2, 1.17.1, 1.17.0, 1.16.1, 1.16.0, 1.15.2, 1.15.1, 1.15.0, 1.14.2, 1.14.1, 1.14.0, 1.13.3, 1.13.2, 1.13.1, 1.13.0, 1.12.4, 1.12.3, 1.12.2, 1.12.1, 1.12.0, 1.11.0, 1.10.2, 1.10.1, 1.10.0, 1.9.3, 1.9.2, 1.9.1, 1.9.0, 1.8.4, 1.8.3, 1.8.2, 1.8.1, 1.8.0, 1.7.0, 1.6.7, 1.6.6, 1.6.5, 1.6.4, 1.6.3, 1.6.2, 1.6.1, 1.6.0, 1.5.2, 1.5.1, 1.5.0, 1.4.3, 1.4.2, 1.4.1, 1.4.0, 1.3.1, 1.3.0, 1.2.2, 1.2.1, 1.2.0, 1.1.2, 1.1.1, 1.1.0, 1.0.2, 1.0.1, 1.0.0
+42 silly fetchPackageMetaData
+42 silly fetchPackageMetaData     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:156:16)
+42 silly fetchPackageMetaData     at /usr/share/npm/node_modules/iferr/index.js:13:50
+42 silly fetchPackageMetaData     at /usr/share/npm/lib/utils/pulse-till-done.js:19:8
+42 silly fetchPackageMetaData     at saved (/usr/share/npm/lib/cache/caching-client.js:168:7)
+42 silly fetchPackageMetaData     at /usr/share/npm/node_modules/graceful-fs/polyfills.js:210:7
+42 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:135:15)
+43 silly rollbackFailedOptional Starting
+44 silly rollbackFailedOptional Finishing
+45 silly runTopLevelLifecycles Starting
+46 silly runTopLevelLifecycles Finishing
+47 silly install printInstalled
+48 verbose stack Error: No compatible version found: body-parser@1.82.2
+48 verbose stack Valid install targets:
+48 verbose stack 1.19.0, 1.18.3, 1.18.2, 1.18.1, 1.18.0, 1.17.2, 1.17.1, 1.17.0, 1.16.1, 1.16.0, 1.15.2, 1.15.1, 1.15.0, 1.14.2, 1.14.1, 1.14.0, 1.13.3, 1.13.2, 1.13.1, 1.13.0, 1.12.4, 1.12.3, 1.12.2, 1.12.1, 1.12.0, 1.11.0, 1.10.2, 1.10.1, 1.10.0, 1.9.3, 1.9.2, 1.9.1, 1.9.0, 1.8.4, 1.8.3, 1.8.2, 1.8.1, 1.8.0, 1.7.0, 1.6.7, 1.6.6, 1.6.5, 1.6.4, 1.6.3, 1.6.2, 1.6.1, 1.6.0, 1.5.2, 1.5.1, 1.5.0, 1.4.3, 1.4.2, 1.4.1, 1.4.0, 1.3.1, 1.3.0, 1.2.2, 1.2.1, 1.2.0, 1.1.2, 1.1.1, 1.1.0, 1.0.2, 1.0.1, 1.0.0
+48 verbose stack
+48 verbose stack     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:156:16)
+48 verbose stack     at /usr/share/npm/node_modules/iferr/index.js:13:50
+48 verbose stack     at /usr/share/npm/lib/utils/pulse-till-done.js:19:8
+48 verbose stack     at saved (/usr/share/npm/lib/cache/caching-client.js:168:7)
+48 verbose stack     at /usr/share/npm/node_modules/graceful-fs/polyfills.js:210:7
+48 verbose stack     at FSReqWrap.oncomplete (fs.js:135:15)
+49 verbose cwd /mnt/c/Users/joao_/OneDrive/Área de Trabalho/JavaScript/html/exercicios/form
+50 error Linux 4.4.0-18362-Microsoft
+51 error argv "/usr/bin/node" "/usr/bin/npm" "install" "--save" "express@4.16.3" "body-parser@1.82.2"
+52 error node v8.10.0
+53 error npm  v3.5.2
+54 error No compatible version found: body-parser@1.82.2
+54 error Valid install targets:
+54 error 1.19.0, 1.18.3, 1.18.2, 1.18.1, 1.18.0, 1.17.2, 1.17.1, 1.17.0, 1.16.1, 1.16.0, 1.15.2, 1.15.1, 1.15.0, 1.14.2, 1.14.1, 1.14.0, 1.13.3, 1.13.2, 1.13.1, 1.13.0, 1.12.4, 1.12.3, 1.12.2, 1.12.1, 1.12.0, 1.11.0, 1.10.2, 1.10.1, 1.10.0, 1.9.3, 1.9.2, 1.9.1, 1.9.0, 1.8.4, 1.8.3, 1.8.2, 1.8.1, 1.8.0, 1.7.0, 1.6.7, 1.6.6, 1.6.5, 1.6.4, 1.6.3, 1.6.2, 1.6.1, 1.6.0, 1.5.2, 1.5.1, 1.5.0, 1.4.3, 1.4.2, 1.4.1, 1.4.0, 1.3.1, 1.3.0, 1.2.2, 1.2.1, 1.2.0, 1.1.2, 1.1.1, 1.1.0, 1.0.2, 1.0.1, 1.0.0
+55 error If you need help, you may report this error at:
+55 error     <https://github.com/npm/npm/issues>
+56 verbose exit [ 1, true ]
