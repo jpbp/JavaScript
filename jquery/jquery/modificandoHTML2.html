@@ -17,6 +17,16 @@
     <p class='numero'>5</p>
 
     <script>
-        // ...
+       $('#div1').append(', 2')
+       $('#div1').prepend('0, ')
+
+       $('<span>, 3</span>').appendTo('#div1')
+       $('<span>-1, </span>').prependTo('#div1')
+
+        //envolvendo os paragrafos na div
+       $('p.numero').wrap('<div>')
+
+
+        
     </script>
 </body>

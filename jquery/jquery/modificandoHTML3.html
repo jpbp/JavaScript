@@ -19,7 +19,21 @@
             { nome: 'Carlos', nota: 7.6 },
             { nome: 'Julia', nota: 9.7 }
         ]
+        const tabela = $('<table ></table>').css('border','solid 5px')
+        const tr1 = $('<tr></tr>')
+        const tdNome = $('<td>Nome</td>')
+        const tdNota = $('<td>Nota</td>')
+        tr1.append(tdNome).append(tdNota)
+        tabela.append(tr1)
+        pessoas.forEach((p)=>{
+            const tr =  $('<tr></tr>')
+            const td1 = $(`<td>${p.nome}</td>`) 
+            const td2 = $(`<td>${p.nota}</td>`)
+            tr.append(td1).append(td2)
+            tabela.append(tr)
+        })
         
-        // ...
+        $('#conteudo').append(tabela)
+       
     </script>
 </body>

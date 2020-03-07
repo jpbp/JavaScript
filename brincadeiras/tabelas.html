@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table, th, td {
+             border: 1px solid black;
+        }
+        table {
+  width: 100%;
+}
+
+th {
+  height: 50px;
+}
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+    </style>
+</head>
+<body>
+
+    <div>
+
+
+    </div>
+
+
+</body>
+<script>
+    const div = document.querySelector('div')
+    const tabela = document.createElement('table')
+    const tr1 = document.createElement('tr')
+    const td1 = document.createElement('td')
+    const td2 = document.createElement('td')
+    const td3 = document.createElement('td')
+    td1.innerHTML = 'Produto' 
+    td2.innerHTML = 'Preco'
+    td3.innerHTML = 'quantidade'
+    div.appendChild(tabela)
+    tabela.appendChild(tr1)
+    tr1.appendChild(td1)
+    tr1.appendChild(td2)
+    tr1.appendChild(td3)
+</script>
+</html>

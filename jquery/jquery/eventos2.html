@@ -21,6 +21,17 @@
     <input type="text" placeholder="Digite e Selecione">
     <div id="resultado2">?</div>
     <script>
-        // ...
+
+        const alternarDestaque = () => $('#div1').toggleClass('destaque')
+        //entrando e saindo da div, alterando o destaque
+
+        //$('#div1').on('mouseenter mouseleave',alternarDestaque)
+        $('#div1').hover(alternarDestaque,e=>{})
+        $('#div1').one('mouseenter',e => alert('aviso'))
+        $('input').keyup(function(e){
+            const valor = $(this).val()
+            console.log(valor)
+            $('#resultado2').html(valor)
+        })
     </script>
 </body>
